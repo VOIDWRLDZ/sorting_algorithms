@@ -30,7 +30,7 @@ void bubble_sort(int *array, size_t size)
 				print_array(array, size);
 			}
 		}
-		/* optimize by logically elinating final swap from last loop */
+		/* Optimize by logically eliminating final swap from last loop */
 		n--;
 	}
 }
