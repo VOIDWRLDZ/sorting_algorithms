@@ -4,7 +4,7 @@
  * bubble_sort - Sorts an array of integers in ascending order
  * using the Bubble sort algorithm
  * @array: The array to be sorted
- * @size: Number of elements in the array
+ * @size: Number of elements in @array
  */
 void bubble_sort(int *array, size_t size)
 {
@@ -22,17 +22,13 @@ void bubble_sort(int *array, size_t size)
 		{
 			if (array[j] > array[j + 1])
 			{
-				/* Swap elements */
 				temp = array[j];
 				array[j] = array[j + 1];
 				array[j + 1] = temp;
-				swapped = 1;
-
-				/* Print the array after each swap */
 				print_array(array, size);
+				swapped = 1;
 			}
 		}
-		/* If no swapping occurred, array is already sorted */
 		if (swapped == 0)
 			break;
 	}
